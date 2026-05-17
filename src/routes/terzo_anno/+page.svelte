@@ -1,16 +1,17 @@
 <script>
-  let immagine_esempio = "/parte_del_funzionamento.png";
-  let immagine_codice_ristretto = "/Codice_ristretto.png";
+  import { base } from '$app/paths';
+  let immagine_esempio = "{base}/parte_del_funzionamento.png";
+  let immagine_codice_ristretto = "{base}/Codice_ristretto.png";
 </script>
 
 <nav class="navbar">
   <div class="nav-container">
-    <a href="/" class="brand">Portfolio</a>
+    <a href="{base}/" class="brand">Portfolio</a>
     <div class="nav-links">
-      <a href="/">Home</a>
-      <a href="/terzo_anno" class="active">Terzo Anno</a>
-      <a href="/quarto_anno">Quarto Anno</a>
-      <a href="/quinto_anno">Quinto Anno</a>
+      <a href="{base}/">Home</a>
+      <a href="{base}/terzo_anno" class="active">Terzo Anno</a>
+      <a href="{base}/quarto_anno">Quarto Anno</a>
+      <a href="{base}/quinto_anno">Quinto Anno</a>
     </div>
   </div>
 </nav>
@@ -71,7 +72,7 @@
     </div>
 
     <div class="actions">
-      <a href="/terzo_anno/codice_fiscale" class="btn-primary">Visualizza tutto il codice sorgente</a>
+      <a href="{base}/terzo_anno/codice_fiscale" class="btn-primary">Visualizza tutto il codice sorgente</a>
     </div>
   </section>
 </main>

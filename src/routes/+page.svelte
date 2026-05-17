@@ -23,7 +23,7 @@
       <p>Benvenuti nel mio portfolio digitale. Qui ho raccolto i progetti più significativi del mio percorso scolastico, inclusi i lavori in C, Python e lo sviluppo web.</p>
     </div>
     <div class="cta">
-      <a href="/quinto_anno" class="button">Guarda i miei ultimi lavori</a>
+      <a href="{base}/quinto_anno" class="button">Guarda i miei ultimi lavori</a>
     </div>
   </section>
 </main>
