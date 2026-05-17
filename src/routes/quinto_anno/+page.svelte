@@ -1,14 +1,14 @@
 <script>
   import { base } from '$app/paths';
-  let videoSource = "{base}/Progetto_1522_video_di_come_funziona.mp4";
+  let videoSource = `${base}/Progetto_1522_video_di_come_funziona.mp4`;
   
   // Immagini aggiornate con i tuoi percorsi reali
-  let imgItaliano1 = "${base}/libro_roberto.jfif";
-  let imgItaliano2 = "${base}/primo_levi.png";
-  let imgStoria1 = "${base}/progetto_lebensborn.png";
-  let imgStoria2 = "${base}/T4.png";
-  let imgStoria3 = "${base}/percorso_immagine_storia3.png";
-  let imgStoria4 = "${base}/movimento_68.png";
+  let imgItaliano1 = `${base}/libro_roberto.jfif`;
+  let imgItaliano2 = `${base}/primo_levi.png`;
+  let imgStoria1 = `${base}/progetto_lebensborn.png`;
+  let imgStoria2 = `${base}/T4.png`;
+  let imgStoria3 = `${base}/percorso_immagine_storia3.png`;
+  let imgStoria4 = `${base}/movimento_68.png`;
 
   // Il tuo link Google Doc reale integrato
   let embedGoogleDocs = "https://docs.google.com/document/d/e/2PACX-1vSz-HeGuK_jArLx5N8Gi8NcTecpx8Ft3QX7ed7FIoasQUeSH2uDEej2HwUMwKLcNMxpUR9axtxFFhHB/pub?embedded=true";

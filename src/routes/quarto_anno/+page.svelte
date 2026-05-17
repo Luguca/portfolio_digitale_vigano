@@ -1,6 +1,6 @@
 <script>
   import { base } from '$app/paths';
-  let videoSource = "${base}/Progetto_test_patente.mp4";
+  let videoSource = `${base}/Progetto_test_patente.mp4`;
 </script>
 
 <nav class="navbar">

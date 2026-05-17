@@ -1,7 +1,7 @@
 <script>
   import { base } from '$app/paths';
-  let immagine_esempio = "${base}/parte_del_funzionamento.png";
-  let immagine_codice_ristretto = "${base}/Codice_ristretto.png";
+  let immagine_esempio = `${base}/parte_del_funzionamento.png`;
+  let immagine_codice_ristretto = `${base}/Codice_ristretto.png`;
 </script>
 
 <nav class="navbar">
