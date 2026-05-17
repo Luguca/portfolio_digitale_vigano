@@ -1,3 +1,5 @@
+export const prerender = true;
+
 <script>
 	import favicon from '$lib/assets/favicon.svg';
 
