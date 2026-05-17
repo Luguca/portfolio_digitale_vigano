@@ -1,15 +1,16 @@
 <script>
-  let videoSource = "/Progetto_test_patente.mp4";
+  import { base } from '$app/paths';
+  let videoSource = "{base}/Progetto_test_patente.mp4";
 </script>
 
 <nav class="navbar">
   <div class="nav-container">
-    <a href="/" class="brand">Portfolio</a>
+    <a href="{base}/" class="brand">Portfolio</a>
     <div class="nav-links">
-      <a href="/">Home</a>
-      <a href="/terzo_anno">Terzo Anno</a>
-      <a href="/quarto_anno" class="active">Quarto Anno</a>
-      <a href="/quinto_anno">Quinto Anno</a>
+      <a href="{base}/">Home</a>
+      <a href="{base}/terzo_anno">Terzo Anno</a>
+      <a href="{base}/quarto_anno" class="active">Quarto Anno</a>
+      <a href="{base}/quinto_anno">Quinto Anno</a>
     </div>
   </div>
 </nav>

@@ -1,4 +1,5 @@
 <script>
+  import { base } from '$app/paths';
   const githubRawUrl = "https://raw.githubusercontent.com/Luguca/codice-fiscale/refs/heads/main/codice_fiscale.c";
 </script>
 

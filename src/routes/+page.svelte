@@ -1,5 +1,6 @@
 <script>
   // Puoi aggiungere variabili per rendere il testo dinamico
+  import { base } from '$app/paths';
   let nome = "Luca Viganò";
   let specializzazione = "Studente di Informatica";
 </script>
@@ -7,10 +8,10 @@
 <nav>
   <div class="logo">Portfolio</div>
   <div class="links">
-    <a href="/">Home</a>
-    <a href="/terzo_anno">Terzo Anno</a>
-    <a href="/quarto_anno">Quarto Anno</a>
-    <a href="/quinto_anno">Quinto Anno</a>
+    <a href="{base}/">Home</a>
+    <a href="{base}/terzo_anno">Terzo Anno</a>
+    <a href="{base}/quarto_anno">Quarto Anno</a>
+    <a href="{base}/quinto_anno" class="active">Quinto Anno</a>
   </div>
 </nav>
 
