@@ -9,6 +9,9 @@
   let imgStoria2 = `${base}/T4.png`;
   let imgStoria3 = `${base}/percorso_immagine_storia3.png`;
   let imgStoria4 = `${base}/movimento_68.png`;
+  
+  // Immagini aggiunte per la sezione Inglese
+  let imgInglesePollution = `${base}/water_soil_pollution.png`;
 
   // Il tuo link Google Doc reale integrato
   let embedGoogleDocs = "https://docs.google.com/document/d/e/2PACX-1vSz-HeGuK_jArLx5N8Gi8NcTecpx8Ft3QX7ed7FIoasQUeSH2uDEej2HwUMwKLcNMxpUR9axtxFFhHB/pub?embedded=true";
@@ -41,6 +44,9 @@
     <button class="sub-nav-link {currentSubject === 'storia' ? 'active' : ''}" onclick={() => currentSubject = 'storia'}>
       Storia
     </button>
+    <button class="sub-nav-link {currentSubject === 'inglese' ? 'active' : ''}" onclick={() => currentSubject = 'inglese'}>
+      Inglese
+    </button>
     <button class="sub-nav-link {currentSubject === 'informatica' ? 'active' : ''}" onclick={() => currentSubject = 'informatica'}>
       Informatica
     </button>
@@ -52,7 +58,7 @@
       <section class="content-card">
         <h2 class="card-title">Prigione Domestica</h2>
         <p class="card-text">
-          In questa ricerca abbiamo analizzato il phenomenon della violenza domestica, con particolare attenzione al ruolo dei centri antiviolenza e alle strategie di prevenzione. Il documento completo è disponibile qui sotto.
+          In questa ricerca abbiamo analizzato il fenomeno della violenza domestica, con particolare attenzione al ruolo dei centri antiviolenza e alle strategie di prevenzione. Il documento completo è disponibile qui sotto.
         </p>
         
         <div class="doc-container">
@@ -69,8 +75,8 @@
         <div class="card-left-text">
           <h2 class="card-title">Lettura di "L'amore mio non muore" di Roberto Saviano e incontro con l'autore</h2>
           <p class="card-text">
-            Trama: Il libro racconta la storia di una donna che, dopo essere stata vittima di violenza domestica, riesce a liberarsi grazie al supporto di un centro antiviolenza. Attraverso la narrazione, Saviano esplora le dinamiche della violenza e l'importance del sostegno sociale.
-            Durante L'incontro abbiamo avuto l'opportunità di fare domande all'autore basandoci sul libro letto, esplorando vari temi anche al di fuori di quello parlato nel libro.
+            Trama: Il libro racconta la storia di una donna che, dopo essere stata vittime di violenza domestica, riesce a liberarsi grazie al supporto di un centro antiviolenza. Attraverso la narrazione, Saviano esplora le dinamiche della violenza e l'importanza del sostegno sociale.
+            Durante l'incontro abbiamo avuto l'opportunità di fare domande all'autore basandoci sul libro letto, esplorando vari temi anche al di fuori di quello parlato nel libro.
           </p>
         </div>
         <div class="card-right-img">
@@ -91,7 +97,7 @@
         <div class="card-right-img">
           <div class="image-box-simple">
             <img src={imgItaliano2} alt="Primo Levi" />
-            <div class="image-label">trama dei "I sommersi e i salvati" e spiegazione della Zona Grigia</div>
+            <div class="image-label">Trama de "I sommersi e i salvati" e spiegazione della Zona Grigia</div>
           </div>
         </div>
       </section>
@@ -104,9 +110,9 @@
       <section class="content-card">
         <div class="storia-split-top">
           <div class="storia-text">
-            <h2 class="card-title">Akiton T4 e il progetto Lebensborn</h2>
+            <h2 class="card-title">Aktion T4 e il progetto Lebensborn</h2>
             <p class="card-text">
-              Il progetto Lebensborn, avviato dalla Germania nazista, mirava a promuovere la crescita della "razza ariana" attraverso la selezione e l'incoraggiamento alla procreazione di individui considerati "puri". Parallelamente, l'Aktion T4 rappresentava il programma di eutanasia che portò alla morte di migliaia di persone ritenute "indegne di vivere". Questi events evidenziano le tragiche conseguenze delle ideologie razziste e totalitarie del XX secolo.
+              Il progetto Lebensborn, avviato dalla Germania nazista, mirava a promuovere la crescita della "razza ariana" attraverso la selezione e l'incoraggiamento alla procreazione di individui considerati "puri". Parallelamente, l'Aktion T4 rappresentava il programma di eutanasia che portò alla morte di migliaia di persone ritenute "indegne di vivere". Questi eventi evidenziano le tragiche conseguenze delle ideologie razziste e totalitarie del XX secolo.
             </p>
           </div>
           <div class="storia-img-side">
@@ -186,7 +192,7 @@
               <tr>
                 <td>
                   <strong>Articolo 10 (Diritto Internazionale)</strong><br>
-                  L'ordinamento giuridico italiano si conforma alle norme del diritto internazionale generalmente riconosciute. Lo straniero, al quale sia impedito nel suo paese l'effettivo esercizio delle libertà democratiche, ha diritto d'asilo.
+                  L'ordinamento giuridico italiano si conforma alle norme del diritto internazionale generalmente riconosciute. Lo straniero, al quale sia impedito nel suo paese l'effettivo esercizio delle libertà programmatiche, ha diritto d'asilo.
                 </td>
                 <td>
                   <strong>Articolo 11 (Ripudio della Guerra)</strong><br>
@@ -217,6 +223,175 @@
             <img src={imgStoria4} alt="L'Europa" />
             <div class="image-label">Protesta studentesca del 1968</div>
           </div>
+        </div>
+      </section>
+
+    </div>
+
+  {:else if currentSubject === 'inglese'}
+    <div class="subject-grid">
+      
+      <section class="content-card card-split">
+        <div class="card-left-text">
+          <h2 class="card-title">Water and Soil Pollution: Challenges & Solutions</h2>
+          <p class="card-text">
+            Environmental degradation represents one of the most critical challenges of our time. Industrial waste, agricultural chemicals, and plastic pollution severely threaten water resources and soil fertility. Addressing this global issue requires sustainable strategies, including advanced waste management, eco-friendly farming techniques, and the promotion of renewable energy to preserve ecosystems for future generations.
+          </p>
+        </div>
+        <div class="card-right-img">
+          <div class="image-box-simple">
+            <img src={imgInglesePollution} alt="Water and soil pollution illustration" />
+            <div class="image-label">Environmental impacts and green solutions</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-card">
+        <h2 class="card-title">Social and Ethical Problems of IT</h2>
+        <p class="card-text">
+          Some of the problems related to the use of information technology include the digital divide, that means that not everyone can access it or know how to use it and could find it difficult.
+          Social media can also cause a lot of problems like bringing the users to isolation through the usage of the application and the addiction to it, and cyberbullying, that is a phenomenon that is increasing and can cause a lot of damage to the victims.
+          Even if it's called information technology, it can be used to spread misinformation and fake news, that can cause a lot of damage to society and to the people who believe in it.
+          It can be even used to supervise and take personal data of the users, that can be used for bad purposes like identity theft and cyberattacks.
+          AI can even be used to create fake images, videos and text, that can be used to spread misinformation and propaganda and steal jobs from people.
+        </p>
+      </section>
+
+      <section class="content-card">
+        <h2 class="card-title">Online Dangers & Cyber Awareness</h2>
+        
+        <p class="card-text">
+          The internet offers incredible opportunities for learning and communication, but it also hosts hidden risks. Understanding online dangers is the first step toward protecting our personal data, devices, and digital well-being. Malicious actors continuously develop harmful software designed to compromise global networks and personal devices.
+        </p>
+        
+        <div class="table-responsive-wrapper">
+          <table class="storia-table">
+            <thead>
+              <tr>
+                <th style="width: 40%;">Type of Malware / Virus</th>
+                <th style="width: 60%;">Description & Impact</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <strong>Computer Virus</strong>
+                </td>
+                <td>
+                  A malicious program that attaches itself to legitimate files and spreads across systems, corrupting data and degrading system performance.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <strong>Ransomware</strong>
+                </td>
+                <td>
+                  Advanced software that encrypts user data and locks the operating system, demanding a payment to restore access.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <strong>Spyware</strong>
+                </td>
+                <td>
+                  A hidden surveillance program that secretly tracks user activities, logs keystrokes, and steals private credentials without consent.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <strong>Trojan Horse</strong>
+                </td>
+                <td>
+                  Malware disguised as legitimate or safe utility software to trick users into installing it, opening a backdoor for remote hackers.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p class="card-text" style="margin-top: 30px;">
+          <strong>Cyber Security Tips & Best Practices:</strong><br>
+          To safely navigate the digital world and defend against cyber threats, it is crucial to adopt safe browsing habits. Always create strong, unique passwords for every account and enable Multi-Factor Authentication (MFA). Keep your antivirus and operating system updated to patch security flaws, avoid clicking on suspicious links or downloading email attachments from unknown senders, and never share sensitive personal details online.
+        </p>
+      </section>
+
+      <section class="content-card">
+        <h2 class="card-title">Advantages vs Disadvantages of AI</h2>
+        <p class="card-text">
+          Artificial Intelligence is redefining modern society. Below is a detailed comparison exploring the dual nature of AI integration across different fields.
+        </p>
+        
+        <div class="table-responsive-wrapper">
+          <table class="storia-table">
+            <thead>
+              <tr>
+                <th style="width: 50%;">Advantages of AI</th>
+                <th style="width: 50%;">Disadvantages of AI</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <strong>Automation & Efficiency</strong><br>
+                  AI can perform repetitive tasks faster and more accurately than humans, streamlining operational workflows.
+                </td>
+                <td>
+                  <strong>Job Displacement</strong><br>
+                  Automation of complex tasks can lead to layoffs and reduce traditional employment opportunities in many sectors.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <strong>24/7 Availability</strong><br>
+                  Digital systems can work continuously without breaks, fatigue, or downtime, offering constant support.
+                </td>
+                <td>
+                  <strong>High Implementation Costs</strong><br>
+                  Developing, deploying, and maintaining advanced AI software requires substantial financial resources.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <strong>Data Analysis & Insights</strong><br>
+                  AI algorithms process vast amounts of unstructured information rapidly to identify useful patterns.
+                </td>
+                <td>
+                  <strong>Lack of Human Emotion</strong><br>
+                  Machines cannot replicate empathy, emotional intelligence, or genuine human connection in critical decision-making.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <strong>Reduction of Human Error</strong><br>
+                  By relying on precise code and logic, AI minimizes the risks associated with manual calculations and distraction.
+                </td>
+                <td>
+                  <strong>Algorithmic Bias</strong><br>
+                  If trained on flawed or unrepresentative data, AI systems can reinforce social discrimination and prejudice.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <strong>Medical Breakthroughs</strong><br>
+                  AI models assist doctors in early diagnostics, genomic sequencing, and discovering new chemical compounds for drugs.
+                </td>
+                <td>
+                  <strong>Security & Privacy Risks</strong><br>
+                  Centralizing massive personal data sets creates vulnerabilities for severe cyberattacks and identity theft.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <strong>Creative Assistance</strong><br>
+                  Generative algorithms help developers write code blocks, edit content, and brainstorm architectural layouts efficiently.
+                </td>
+                <td>
+                  <strong>Misinformation Risks</strong><br>
+                  The ease of generating realistic fake images, text, and videos facilitates the mass spread of digital propaganda.
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </section>
 
@@ -257,7 +432,6 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
 
-  /* Navbar Principale */
   .navbar {
     background: white;
     padding: 20px 0;
@@ -296,7 +470,6 @@
     color: #007bff;
   }
 
-  /* Sub-Navbar Interna */
   .sub-navbar {
     display: flex;
     justify-content: center;
@@ -329,7 +502,6 @@
     background-color: #ff4500;
   }
 
-  /* Layout */
   .page-container {
     max-width: 1000px;
     margin: 0 auto;
@@ -359,7 +531,6 @@
     gap: 40px;
   }
 
-  /* Sfondo dei contenuti */
   .content-card {
     background-color: rgb(241, 241, 241);
     border-radius: 12px;
@@ -367,7 +538,6 @@
     box-shadow: 0 10px 30px rgba(0,0,0,0.06);
   }
 
-  /* Layout affiancato equo (50/50) */
   .card-split {
     display: flex;
     align-items: center;
@@ -387,7 +557,6 @@
     margin-top: 0;
   }
 
-  /* Struttura immagini miste per Storia Riquadro 1 */
   .storia-split-top {
     display: flex;
     align-items: center;
@@ -400,7 +569,7 @@
 
   .storia-img-side {
     flex: 1;
-    max-width: 250px; 
+    max-width: 250px;
     margin: 0 auto;
   }
 
@@ -413,7 +582,6 @@
     width: 100%;
   }
 
-  /* Tabella Storia Riquadro 2 */
   .table-responsive-wrapper {
     width: 100%;
     overflow-x: auto;
@@ -471,7 +639,6 @@
     margin-bottom: 25px;
   }
 
-  /* Contenitore Google Doc */
   .doc-container {
     width: 100%;
     height: 600px;
@@ -489,7 +656,6 @@
     display: block;
   }
 
-  /* Box Immagini */
   .image-box-simple {
     width: 100%;
     border-radius: 8px;
@@ -515,7 +681,6 @@
     font-weight: 500;
   }
 
-  /* Finestra Video Dark (Informatica) */
   .editor-window {
     background: #2d2d2d;
     border-radius: 8px;
@@ -554,7 +719,6 @@
     aspect-ratio: 16 / 9;
   }
 
-  /* Gestione Responsive Mobile */
   @media (max-width: 768px) {
     .page-container { padding: 30px 15px; }
     .content-card { padding: 30px 20px; }
